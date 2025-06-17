@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treninzi - Street Workout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Treninzi</h1>
+        <nav class="nav justify-content-center">
+            <a href="index.html" class="nav-link text-white">Početna</a>
+            <a href="galerija.html" class="nav-link text-white">Galerija</a>
+            <a href="treninzi.html" class="nav-link text-white">Treninzi</a>
+            <a href="kontakt.html" class="nav-link text-white">Kontakt</a>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center">Programi treninga</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/pocetni.jpg" class="card-img-top" alt="Početni nivo">
+                    <div class="card-body">
+                        <h5 class="card-title">Početni nivo</h5>
+                        <p class="card-text">Osnovne vežbe: sklekovi, zgibovi, propadanja. Idealno za početnike!</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pocetniModal">Saznaj više</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/srednji.jpg" class="card-img-top" alt="Srednji nivo">
+                    <div class="card-body">
+                        <h5 class="card-title">Srednji nivo</h5>
+                        <p class="card-text">Napredne vežbe: eksplozivni sklekovi, široki zgibovi, plank.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#srednjiModal">Saznaj više</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/napredni.jpg" class="card-img-top" alt="Napredni nivo">
+                    <div class="card-body">
+                        <h5 class="card-title">Napredni nivo</h5>
+                        <p class="card-text">Kompleksne vežbe: planche, muscle-up, ljudska zastava.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#napredniModal">Saznaj više</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modali za detaljne opise -->
+    <div class="modal fade" id="pocetniModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Početni nivo treninga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ovaj trening je idealan za one koji tek počinju. Fokus je na izgradnji snage pomoću osnovnih vežbi.</p>
+                    <ul>
+                        <li>Sklekovi – jačaju grudi, ramena i ruke.</li>
+                        <li>Zgibovi – jačaju leđa i bicepse.</li>
+                        <li>Propadanja – odlična vežba za triceps.</li>
+                    </ul>
+                    <p>Preporučuje se rad u serijama 3x10 za svaku vežbu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="srednjiModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Srednji nivo treninga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ovaj nivo treninga namenjen je onima koji već imaju osnovnu snagu i žele da pređu na složenije vežbe.</p>
+                    <ul>
+                        <li>Eksplozivni sklekovi – poboljšavaju eksplozivnost i snagu gornjeg tela.</li>
+                        <li>Široki zgibovi – ciljano rade na širini leđa.</li>
+                        <li>Plank – izuzetna vežba za core stabilnost.</li>
+                    </ul>
+                    <p>Vežbe se rade u serijama 4x12 uz pravilno disanje.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="napredniModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Napredni nivo treninga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Napredni trening zahteva visok nivo snage i kontrolu nad telom.</p>
+                    <ul>
+                        <li>Planche – vežba koja zahteva ekstremnu snagu ramena.</li>
+                        <li>Muscle-up – kombinacija zgiba i propadanja u jednom pokretu.</li>
+                        <li>Ljudska zastava – vežba za vrhunsku stabilnost i snagu.</li>
+                    </ul>
+                    <p>Preporučuje se rad u serijama 3x5 uz postepeno povećavanje težine.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Street Workout</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
